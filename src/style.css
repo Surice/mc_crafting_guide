@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(177, 96, 96);
+}
+
+div{
+    border: 1px solid black;
+}
+
+.cra-step{
+    overflow-y: hidden;
+    max-height: auto;
+} 

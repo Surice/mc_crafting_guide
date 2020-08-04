@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Minecraft crafting Guide</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+    <script src='./index.js'></script>
+    <script src='./data.js'></script>
+</head>
+<body>
+    <h1>Minecraft crafting Guide</h1>
+    <div>
+        <select id="sel-item">
+            <option>--Item--</option>
+        </select>
+        <br>
+        <br>
+        <input id="inp-quan" type="number" value="1">
+        <button onclick="calculate()">Calculate</button>
+    </div>
+    <div>
+        <label>required Resources</label>
+        <ul id="result">  
+        </ul>
+        <br>
+        <label>unused Resources</label>
+        <ul id="u-res">
+        </ul>
+    </div>
+    <div>
+        <label>Crafting Steps</label>
+        <div id="cra-step" class="cra-step">
+
+        </div>
+    </div>
+</body>
+<script>
+    for (i in stor){
+        document.getElementById('sel-item').innerHTML += `<option>${i}</option>`
+    }
+</script>
+</html>
