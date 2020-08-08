@@ -7,8 +7,7 @@ function calculate(){
 
     var inventory = new Object(),
         required = new Object(),
-        liCon = new Array(),
-        compCraftStep = new Object();
+        craftArray = new Array();
 
     while(quan > 0){
         quan--;
@@ -22,7 +21,7 @@ function calculate(){
         document.getElementById('u-res').innerHTML += `<li>${i} (${inventory[i]})</li>`;
     }
 
-    function fetch(item){
+    async function fetch(item){
         var reqLi = new Object();
 
         stor[item].recipe.forEach(e =>{
@@ -34,14 +33,12 @@ function calculate(){
         });
         var newItem = "<ul>";
         for (i in reqLi){
-            newItem += `<li>${reqLi[i]}x ${i}</li>`;
+            newItem += `<li><table><tr><td>${reqLi[i]}</td><td>x</td><td>${i}</td></tr></table></li>`;
         }
         newItem += `</ul> ---> ${stor[item].quan}x ${item}`;
-
         
-        liCon.unshift(newItem);
-
-        document.getElementById('cra-step').innerHTML = liCon;
+        craftArray.unshift(newItem);
+        document.getElementById('cra-step').innerHTML = craftArray.join(' ');
 
 
 

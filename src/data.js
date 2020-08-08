@@ -123,7 +123,7 @@ const stor = {
     "lead": {"recipe": ["string","string","string","string","slime"],"quan": 2},
     "glass panes": {"recipe": ["glass","glass","glass","glass","glass","glass"],"quan": 16},
     "item frame": {"recipe": ["stick","stick","stick","stick","stick","stick","stick","stick","leather"],"quan": 1},
-    "test": {"recipe": ["oak wood plank","oak wood plank","oak wood plank","oak wood plank","oak wood plank","oak wood plank","oak wood plank","oak wood plank",],"quan": 1}, 
+    "test": {"recipe": ["sugar","sugar","sugar"],"quan": 1}, 
 }
 
 /*
