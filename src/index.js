@@ -15,15 +15,24 @@ function calculate(){
     }
 
     for (i in required){
-        document.getElementById('result').innerHTML += `<li>${i} (${required[i]})</li>`;
+        document.getElementById('result').innerHTML += `<li>${required[i]}x (${stackCal(required[i])}) ${i}</li>`;
     }
     for (i in inventory){
         document.getElementById('u-res').innerHTML += `<li>${i} (${inventory[i]})</li>`;
     }
 
+    function stackCal(num){
+        num = num/64;
+        var num2 = num.toString();
+        num2 = num2.split('.')[0];
+        num = num - num2;
+        var res = num2+ " stack´s "+ num*64;
+        return res;
+    }
+
     async function fetch(item){
         var reqLi = new Object();
-
+/*
         stor[item].recipe.forEach(e =>{
             if(reqLi[e]){
                 reqLi[e] += 1;
@@ -39,7 +48,7 @@ function calculate(){
         
         craftArray.unshift(newItem);
         document.getElementById('cra-step').innerHTML = craftArray.join(' ');
-
+*/
 
 
         stor[item].recipe.forEach(e =>{

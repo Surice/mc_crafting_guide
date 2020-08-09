@@ -121,9 +121,24 @@ const stor = {
     "compass": {"recipe": ["iron ingot","iron ingot","iron ingot","iron ingot","redstone"],"quan": 1},
     "clock": {"recipe": ["gold ingot","gold ingot","gold ingot","gold ingot","redstone"],"quan": 1},
     "lead": {"recipe": ["string","string","string","string","slime"],"quan": 2},
-    "glass panes": {"recipe": ["glass","glass","glass","glass","glass","glass"],"quan": 16},
+    "glass pane": {"recipe": ["glass","glass","glass","glass","glass","glass"],"quan": 16},
     "item frame": {"recipe": ["stick","stick","stick","stick","stick","stick","stick","stick","leather"],"quan": 1},
-    "test": {"recipe": ["sugar","sugar","sugar"],"quan": 1}, 
+    
+    "lead nuggot": {"recipe": ["lead ingot"],"quan": 9},
+    "steel nuggot": {"recipe": ["steel ingot"],"quan": 9},
+    "invar nuggot": {"recipe": ["invar ingot"],"quan": 9},
+    "electrum nuggot": {"recipe": ["electrum ingot"],"quan": 9},
+    "enderium nuggot": {"recipe": ["enderium ingot"],"quan": 9},
+
+    "photovoltaic cell": {"recipe": ["glass pane","glass pane","glass pane","electrotine","iron nuggot","iron nuggot","iron nuggot"],"quan": 1},
+    "leadstone solar core": {"recipe": ["lead nuggot","lead nuggot","lead nuggot","lead nuggot","iron ingot"],"quan": 1},
+    "hardened solar core": {"recipe": ["leadstone solar core","invar nuggot","invar nuggot","invar nuggot","invar nuggot"],"quan": 1},
+    "redstone solar core": {"recipe": ["hardened solar core","electrum nuggot","electrum nuggot","electrum nuggot","electrum nuggot"],"quan": 1},
+    "resonant solar core": {"recipe": ["redstone solar core","enderium nuggot","enderium nuggot","enderium nuggot","enderium nuggot"],"quan": 1},
+    "leadstone solar panel": {"recipe": ["photovoltaic cell","photovoltaic cell","photovoltaic cell","redstone","redstone","leadstone solar core","steel nuggot","steel nuggot","steel nuggot"],"quan": 1},
+    "hardened solar panel": {"recipe": ["hardened solar core","leadstone solar panel","leadstone solar panel","leadstone solar panel","leadstone solar panel","leadstone solar panel","leadstone solar panel","leadstone solar panel","leadstone solar panel"],"quan": 1},
+    "redstone solar panel": {"recipe": ["redstone solar core","hardened solar panel","hardened solar panel","hardened solar panel","hardened solar panel","hardened solar panel","hardened solar panel","hardened solar panel","hardened solar panel"],"quan": 1},
+    "resonant solar panel": {"recipe": ["resonant solar core","redstone solar panel","redstone solar panel","redstone solar panel","redstone solar panel","redstone solar panel","redstone solar panel","redstone solar panel","redstone solar panel"],"quan": 1},
 }
 
 /*
