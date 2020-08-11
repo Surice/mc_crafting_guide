@@ -18,7 +18,7 @@ function calculate(){
         document.getElementById('result').innerHTML += `<li>${required[i]}x (${stackCal(required[i])}) ${i}</li>`;
     }
     for (i in inventory){
-        document.getElementById('u-res').innerHTML += `<li>${i} (${inventory[i]})</li>`;
+        document.getElementById('u-res').innerHTML += `<li>${inventory[i]}x ${i}</li>`;
     }
 
     function stackCal(num){
@@ -31,8 +31,9 @@ function calculate(){
     }
 
     async function fetch(item){
-        var reqLi = new Object();
 /*
+        var reqLi = new Object();
+
         stor[item].recipe.forEach(e =>{
             if(reqLi[e]){
                 reqLi[e] += 1;
